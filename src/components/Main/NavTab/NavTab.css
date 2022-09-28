@@ -1,0 +1,9 @@
+.navigation{}
+@media screen and (max-width: 320px) {
+    .navigation{
+        display: flex;
+        //justify-content: space-between;
+        width: 88%;
+        justify-content: center;
+    }
+}
