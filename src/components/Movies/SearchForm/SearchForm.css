@@ -25,7 +25,7 @@
   margin-right: 0px;
   width: 77.4%;
   backgroun-color: #2F2F2F;
-  justify-content: start;
+  justify-content: space-between;
 }
 .search__lupa {
     margin:0;
@@ -71,10 +71,18 @@
 @media screen and (max-width: 1022px) {
   .search {
     width: 92%;
-    padding: 90px 0px 111px 0px;
+    
   }
   .search__input {
     width: 72%;
+  }
+  .search__form {
+    justify-content: start;
+  }
+}
+@media screen and (max-width: 770px) {
+  .search {
+    padding: 90px 0px 111px 0px;
   }
 }
 
@@ -113,5 +121,10 @@
   }
   .search__form {
     
+  }
+  @media screen and (max-width: 768px) {
+    .search__form {
+
+    }
   }
 }

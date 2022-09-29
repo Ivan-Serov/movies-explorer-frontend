@@ -129,7 +129,7 @@ color: #8B8B8B;
     font-weight: 400;
 
     }
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 400px) {
         .aboutProject {
             padding: 71px 18px;
         }

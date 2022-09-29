@@ -127,7 +127,13 @@ margin: 0;
     }
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 530px) {
+    .about__info {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 460px) {
     .about {
         padding: 91px 14px 69px;
     }
@@ -137,10 +143,7 @@ margin: 0;
         line-height: 22px;
         padding-bottom: 27px;;
     }
-    .about__info {
-        //flex-direction: column;
-        flex-wrap: wrap-reverse;
-    }
+    
     .about__info-image {
         max-height: 352px;
         max-width: 294px;

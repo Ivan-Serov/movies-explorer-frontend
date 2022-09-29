@@ -3,7 +3,7 @@
     flex-direction: column;
     border-radius: 10px;
     
-    margin: 38px 3.125% 0 3.125%;
+    margin: 38px 0 0 0;
 
     align-items: center;
     background-color: #272727;
@@ -39,6 +39,7 @@
   padding-bottom: 30px;
   margin: 0;
   justify-content: space-between;
+  width: 100%;
 }
 
 .promo__list-item {
@@ -73,7 +74,7 @@
 @media screen and (max-width: 768px) {
   .promo{
     width: 95%;
-    margin: 0;
+    margin: 37px 0px 0px 0px ;
 }
   .promo__title {
  

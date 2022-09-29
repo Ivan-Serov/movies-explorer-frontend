@@ -1,8 +1,16 @@
-.navigation{}
-@media screen and (max-width: 320px) {
+.navigation{
+    display: flex;
+
+    width: 26%;
+}
+@media screen and (max-width: 768px) {
     .navigation{
-        display: flex;
-        //justify-content: space-between;
+        width: 42%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navigation{
         width: 88%;
         justify-content: center;
     }

@@ -42,14 +42,14 @@ margin: 0;
     display: flex;
     justify-content: space-between;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 30px;
-line-height: 50px;
-/* identical to box height, or 167% */
-text-decoration: none;
-letter-spacing: -0.04em;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    /* identical to box height, or 167% */
+    text-decoration: none;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
 
 }
 .portfolio__arrow{
@@ -78,13 +78,14 @@ color: #FFFFFF;
         line-height: 50px;
     }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 335px) {
     .portfolio {
         padding: 0px 14px 91px 14px;
     }
     .portfolio__link {
         font-size: 18px;
         line-height: 28px;
+        min-width: 276px;
     }
     .portfolio__title{
         font-size: 14px;
@@ -101,5 +102,6 @@ color: #FFFFFF;
         height: 12px;
         margin-right: 4px;
         margin-bottom: 3px;
+        min-width: 12px;
     }
 }

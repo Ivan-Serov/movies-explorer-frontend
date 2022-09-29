@@ -132,7 +132,7 @@
     margin-top: 2px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 416px) {
     .register__container {
       margin: 0 auto;
       padding-top: 56px;
