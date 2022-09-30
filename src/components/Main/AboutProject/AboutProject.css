@@ -30,7 +30,7 @@
     justify-content: space-between;
 }
 .project__about-box{
-    width: 550px;
+    width: 48.3%;
 }
 
 .project__about-title {
@@ -111,7 +111,7 @@ color: #8B8B8B;
         justify-content: space-between;
     }
     .project__about-box{
-        width: 319px;
+        width: 48%;
     }
     .project__about-title {
         padding-bottom: 21px;

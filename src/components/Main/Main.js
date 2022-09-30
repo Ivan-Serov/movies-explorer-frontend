@@ -13,7 +13,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
 function Main(){
     return (
-        <div className="main">
+        <main className="main">
            <Header>
                < HeaderMain/>
             </Header>
@@ -26,7 +26,7 @@ function Main(){
             < AboutMe/>
             < Portfolio/>
             < Footer/>
-        </div>
+        </main>
     );
 }
 

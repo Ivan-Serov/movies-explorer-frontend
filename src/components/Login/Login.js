@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Login() {
     return (
-        <div className='login'>
+        <main className='login'>
           <div className='login__container'>
             <header className='login__header'>
               <Link to='/' className='login__logo'></Link>
@@ -51,7 +51,7 @@ function Login() {
               </Link>
             </section>
           </div>
-        </div>
+        </main>
     );
   }
   

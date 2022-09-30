@@ -1,17 +1,18 @@
 .navigation{
     display: flex;
-
-    width: 26%;
+    width: 100%;
+    justify-content: center;
 }
+
 @media screen and (max-width: 768px) {
     .navigation{
-        width: 42%;
-        justify-content: center;
+        //width: 100%;
+
     }
 }
 @media screen and (max-width: 500px) {
     .navigation{
         width: 88%;
-        justify-content: center;
+
     }
 }

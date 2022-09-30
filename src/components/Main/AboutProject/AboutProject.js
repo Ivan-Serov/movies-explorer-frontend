@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 //import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 function AboutProject(){
     return (
-        <div className="aboutProject" id='about'>
+        <section className="aboutProject" id='about'>
             <h2 className="project__title">О проекте</h2>
             <ul className="project__about">
                 <li className="project__about-box">
@@ -34,7 +34,7 @@ function AboutProject(){
                     <p className="project__duration-name color_text">Front-end</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 

@@ -4,10 +4,10 @@ import React, { useEffect, useState } from 'react';
 //import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 function Promo({ children }){
     return (
-        <div className="promo">
+        <section className="promo">
             <h1 className="promo__title">Учебный проект студента факультета Веб-разработки.</h1>
             {children}
-        </div>
+        </section>
     );
 }
 

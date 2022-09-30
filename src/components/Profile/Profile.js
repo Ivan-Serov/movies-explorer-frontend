@@ -14,7 +14,7 @@ function Profile(){
     };
 
     return (
-        <div className = 'profile'>
+        <main className = 'profile'>
             < Header>
                 <HeaderMovies/>
             </Header>
@@ -68,7 +68,7 @@ function Profile(){
                     </button>
                 )}
             </ div>
-        </div>
+        </main>
     );
 }
 export default Profile;

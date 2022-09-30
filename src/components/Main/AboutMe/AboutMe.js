@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import foto from '../../../images/pic__COLOR_pic.png';
 function AboutMe(){
     return (
-        <div className="about" id='student'>
+        <section className="about" id='student'>
             <h2 className="about__header">Студент</h2>
             <div className="about__info">
                 <div className="about__info-container">
@@ -30,7 +30,7 @@ function AboutMe(){
                 </div>
                 <img className="about__info-image" src={foto} alt="Фотография студента" />
             </div>
-        </div>
+        </section>
     );
 }
 

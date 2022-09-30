@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function Register() {
     return (
-        <div className='register'>
+        <main className='register'>
             <div className='register__container'>
                 <header className='register__header'>
                   <Link to='/' className='register__logo'></Link>
@@ -67,7 +67,7 @@ function Register() {
                   </Link>
                 </section>
             </div>
-        </div>
+        </main>
     );
 }
   

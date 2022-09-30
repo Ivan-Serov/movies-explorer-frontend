@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 //import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 function Techs(){
     return (
-        <div className="techs" id='techs'>
+        <section className="techs" id='techs'>
                <h2 className="techs__header">Технологии</h2>
                 <div className="techs__info">
                 <h3 className="techs__title">7 технологий</h3>
@@ -21,7 +21,7 @@ function Techs(){
                 <li className="techs__list-item color_secondary">Express.js</li>
                 <li className="techs__list-item color_secondary">mongoDB</li>
             </ul>
-        </div>
+        </section>
     );
 }
 

@@ -7,14 +7,14 @@ import MoviesCardList from '../Movies/MoviesCardList/MoviesCardList';
 import Footer from '../Footer/Footer'
 function Movies(){
     return (
-        <div className = 'movies'>
+        <main className = 'movies'>
             < Header>
                 <HeaderMovies/>
             </Header>
             <SearchForm />
             <MoviesCardList type='save' />
             <Footer />
-        </div>
+        </main>
     );
 }
 export default Movies;
