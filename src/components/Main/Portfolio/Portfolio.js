@@ -2,7 +2,7 @@ import './Portfolio.css';
 import React, { useEffect, useState } from 'react';
 //import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 //import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
-import foto from '../../../images/text__COLOR_font-main.png';
+import foto from '../../../images/text__COLOR_font-main.svg';
 function Portfolio() {
     return (
         <section className="portfolio">

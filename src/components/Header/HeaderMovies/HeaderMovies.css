@@ -52,7 +52,7 @@
     height: 44px;
     font: inherit;
     color: inherit;
-    background-image: url(../../../images/Burger.png);
+    background-image: url(../../../images/Burger.svg);
     background-color: transparent;
 }
 @media screen and (max-width: 768px) {

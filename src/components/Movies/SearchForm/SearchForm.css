@@ -49,13 +49,13 @@
 }
 
 .search__input:focus {
-  //border: 1px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   opacity: 1;
 }
 
 .search__button {
-  margin: 21px 0px 0px 0px;
+  margin: 21px 0px 0px 34px;
   border: none;
   border-radius: 48px;
   padding: 0;

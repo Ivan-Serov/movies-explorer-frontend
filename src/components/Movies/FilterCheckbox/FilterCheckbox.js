@@ -1,6 +1,6 @@
 import './FilterCheckbox.css';
 import React, { useEffect, useState } from 'react';
-import smalltumb from '../../../images/smalltumb-on.png'; 
+import smalltumb from '../../../images/smalltumb-on.svg'; 
 
 function FilterCheckbox() {
 

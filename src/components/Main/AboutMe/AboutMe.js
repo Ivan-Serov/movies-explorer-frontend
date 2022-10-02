@@ -2,7 +2,7 @@ import './AboutMe.css';
 import React, { useEffect, useState } from 'react';
 //import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 //import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
-import foto from '../../../images/pic__COLOR_pic.png';
+import foto from '../../../images/pic__COLOR_pic.svg';
 function AboutMe(){
     return (
         <section className="about" id='student'>
