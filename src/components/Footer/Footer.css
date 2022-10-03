@@ -1,0 +1,125 @@
+.footer {
+  background: #202020;
+  display: flex;
+    justify-content: center;
+
+    padding-top: 6px;
+    width: 100%;
+}
+
+.footer__container {
+  margin: 0;
+  padding: 58px 0 20px;
+  width: 100%;
+  max-width: 1140px;
+}
+
+.footer__copyright {
+  margin: 0;
+  border-bottom: 1px solid #424242;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #8b8b8b;
+}
+
+.footer__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+}
+
+.footer__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__date {
+  margin: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.footer__item {
+  margin-right: 20px;
+}
+
+.footer__item:last-of-type {
+  margin-right: 0;
+}
+
+.footer__link {
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 0.4s ease;
+}
+
+.footer__link:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+  }
+  .footer__copyright {
+    margin-left: 14px;
+  }
+  .footer__container {
+    padding: 56px 23px 20px;
+  }
+  .footer__date {
+    margin-left: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    
+  }
+  .footer__copyright {
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 15px;
+    width: 100%;
+  }
+  .footer__container {
+    padding: 35px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__date {
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 15px;
+
+    padding-top: 21px;
+    margin-right: 4px;
+  }
+  .footer__footer {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 26px;
+  }
+  .footer__list {
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer__item {
+    margin-right: 0px;
+    padding-bottom:9px;
+  }
+  .footer__link {
+    font-size: 12px;
+    line-height: 15px;
+    /* padding-bottom:1px;
+    margin-bottom: 12px; */
+  }
+}

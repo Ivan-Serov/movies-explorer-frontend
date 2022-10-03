@@ -1,0 +1,9 @@
+.page {
+    width: 100%;
+    min-width: 320px;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
+    user-select: none;
+    background: rgba(32, 32, 32, 1);
+  }

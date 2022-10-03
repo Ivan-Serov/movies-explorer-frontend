@@ -1,0 +1,142 @@
+.promo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    
+    margin: 38px 0 0 0;
+
+    align-items: center;
+    background-color: #272727;
+    width: 93.75%
+}
+.promo__title {
+    text-align: center;
+    
+    padding: 160px 0px 150px 0px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 58px;
+    /* or 116% */
+
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+    width: 70%;
+    margin: 0;
+}
+
+.promo__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  padding-bottom: 30px;
+  margin: 0;
+  justify-content: space-between;
+  width: 26%;
+}
+
+.promo__list-item {
+  width: 96px;
+  max-height: 36px;
+  height: 100%;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: opacity 0.6s;
+  min-width: 83px;
+  margin: 0 5px;
+  background: #303030
+}
+
+.promo__list-item:hover {
+  opacity: 0.6;
+}
+.promo__link-text{
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .promo__list {
+    
+    width: 42%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .promo{
+    width: 95%;
+    margin: 37px 0px 0px 0px ;
+}
+  .promo__title {
+ 
+    
+    padding: 352px 0px 313px 0px;
+
+    font-size: 40px;
+    line-height: 52px;
+    /* or 130% */
+
+
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+
+    width: 74%;
+    margin: 0px;
+  }
+  .promo__list {
+    
+    width: 43%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .promo__list {
+    
+    width: 73%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .promo__list {
+    
+    width: 92%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .promo__title {
+    padding: 220px 0px 212px 0px;
+    font-size: 29px;
+    line-height: 37px;
+    width: 100%;
+    
+  }
+  .promo__link-text{
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .promo__list-item {
+    width: 82px;
+    max-height: 26px;
+    height: 100%;
+    //align-items: center;
+    padding: 5px 0;
+  }
+  .promo{
+    width: 91%;
+    margin: 34px auto 0;
+  }
+  .promo__list {
+    width: 90%;
+    justify-content: space-between;
+    padding-bottom: 17px;
+  }
+}
