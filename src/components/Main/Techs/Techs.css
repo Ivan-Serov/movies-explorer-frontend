@@ -158,6 +158,7 @@ margin: 0 5px 10px;
 @media screen and (max-width: 320px) {
     .techs{
         padding: 70px 18px 39px;
+        background: #202020;
     }
     .techs__header {
         font-size: 18px;

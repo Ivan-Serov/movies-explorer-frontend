@@ -27,15 +27,16 @@
     line-height: 138%;
     color: #FFFFFF;
 }
-@media screen and (max-width: 1080px) {
+
+@media screen and (max-width: 1160px) {
     .filterCheckbox{
         width: 18%;
         //margin-left: 10px;
     }
 }
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1080px) {
     .filterCheckbox{
-        width: 18%;
+        width: 20%;
         //margin-left: 10px;
     }
 }
