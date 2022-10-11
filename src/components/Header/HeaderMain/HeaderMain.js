@@ -9,12 +9,12 @@ function HeaderMain() {
             {/* <Link to='/' className='auth-links__logo'></Link> */}
             <ul className='auth-links__list'>
                 <li className='auth-links__item'>
-                    <Link to='/signup' className='auth-links__registration'>
+                    <Link to='/sign-up' className='auth-links__registration'>
                       Регистрация
                     </Link>
                 </li>
                 <li className='auth-links__item'>
-                    <Link to='/signin' className='auth-links__login'>
+                    <Link to='/sign-in' className='auth-links__login'>
                       Войти
                     </Link>
                 </li>
