@@ -27,11 +27,6 @@ function SearchForm({
   
     const handleSubmit = (evt) => {
       evt.preventDefault();
-  
-      /* setIsFormValid(evt.target.closest('form').checkValidity());
-      if (!isFormValid) {
-        return setErrorText('Нужно ввести ключевое слово');
-      } */
       onSubmit(keyword);
     };
     return (

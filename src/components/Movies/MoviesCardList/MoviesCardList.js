@@ -1,6 +1,6 @@
 import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
-import data from '../../../utils/data';
+
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const BREAKPOINT_480 = 480;
 const VISIBLE_MOVIES_5 = 5;
 const VISIBLE_MOVIES_8 = 8;
 const VISIBLE_MOVIES_12 = 12;
-const VISIBLE_MOVIES_16 = 12;
+const VISIBLE_MOVIES_16 = 16;
 
 const MOVIES_TO_LOAD_2 = 1;
 const MOVIES_TO_LOAD_3 = 2;
@@ -124,11 +124,7 @@ function MoviesCardList({
             <h2 className={classTextNotFound}>
               {moviesFilterArr.length === 0 ? 'Ничего не найдено' : ''}
             </h2>
-            <h2 className={classTextError}>
-              {moviesFilterArr.length === 0
-                ? 'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз'
-                : ''}
-            </h2>
+            
           
           </ul>
           <button type='button'
@@ -158,11 +154,7 @@ function MoviesCardList({
           <h2 className={classTextNotFound}>
             {savedMovies.length === 0 ? 'Ничего не найдено' : ''}
           </h2>
-          <h2 className={classTextError}>
-            {savedMovies.length === 0
-              ? 'Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз'
-              : ''}
-          </h2>
+          
         </ul>
       )}
     </section>

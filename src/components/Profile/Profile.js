@@ -3,14 +3,13 @@ import Header from '../Header/Header';
 
 import React, { useState, useCallback, useEffect } from 'react';
 import './Profile.css'
-import * as auth from '../../utils/AuthApi';
-import { useFormWithValidation } from '../../utils/formValidation';
+import { useFormValidation } from '../../utils/formValidation';
 import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 
 function Profile({ onUpdateUser, onSignOut, isMessageProfile, onRegister, isErrorRegisterBtn1, isRegisterMessage1}) {
-    // Подписываемся на контекст CurrentUserContext
+
     const userData = React.useContext(CurrentUserContext);
-    const controlInput = useFormWithValidation();
+    const controlInput = useFormValidation();
     const errorClassName = !controlInput.isValid
     ? 'register__error register__error_visible'
     : 'register__error';
@@ -30,7 +29,7 @@ function Profile({ onUpdateUser, onSignOut, isMessageProfile, onRegister, isErro
       e.preventDefault();
       setIsEditInput((state) => !state);
     };
-    //функция проверки валидности емайла
+
     const validateEmail = (email) => {
       return String(email)
         .toLowerCase()
@@ -39,7 +38,7 @@ function Profile({ onUpdateUser, onSignOut, isMessageProfile, onRegister, isErro
         );
     };
   
-    // Обработчик изменения инпута обновляет стейт
+
     const handleChange = (e) => {
       const { name, value } = e.target;
       const target = e.target;
@@ -158,7 +157,7 @@ function Profile({ onUpdateUser, onSignOut, isMessageProfile, onRegister, isErro
                              type='submit'
                              className='profile__button'
 
-                             //disabled={!isValid}
+                             disabled={!isValid}
                             >
                              Сохранить
                            </button> 

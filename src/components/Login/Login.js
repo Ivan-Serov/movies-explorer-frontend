@@ -1,10 +1,10 @@
 import './Login.css'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useFormWithValidation } from '../../utils/formValidation';
+import { useFormValidation } from '../../utils/formValidation';
 
 function Login({ onLogin, isLoginMessage, isErrorLoginBtn }) {
-  const controlInput = useFormWithValidation();
+  const controlInput = useFormValidation();
   const { email, password } = controlInput.errors;
   const errorClassName = !controlInput.isValid
     ? 'login__error login__error_visible'

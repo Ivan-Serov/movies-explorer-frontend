@@ -1,10 +1,10 @@
 import './Register.css'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useFormWithValidation } from '../../utils/formValidation';
+import { useFormValidation } from '../../utils/formValidation';
 
 function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
-    const controlInput = useFormWithValidation();
+    const controlInput = useFormValidation();
 
     console.log(controlInput.values);
 
@@ -46,7 +46,7 @@ function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
                         className='register__input'
                         minLength='2'
                         maxLength='40'
-                        //pattern='[A-Za-zА-Яа-яЁё\s-]+'
+                        pattern='[A-Za-zА-Яа-яЁё\s-]+'
                         onChange={controlInput.handleChange}
                         value={name1}
                         required="required"
@@ -64,7 +64,7 @@ function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
                         className='register__input'
                         minLength='5'
                         maxLength='40'
-                        //pattern='[A-Za-zА-Яа-яЁё\s-]+'
+                        pattern='[A-Za-zА-Яа-яЁё\s-]+'
                         onChange={controlInput.handleChange}
                         value={email1}
                         required
@@ -82,7 +82,7 @@ function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
                         className='register__input register__input_color_red'
                         minLength='5'
                         maxLength='40'
-                        //pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+                        pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
                         onChange={controlInput.handleChange}
                         value={password1}
                         required
