@@ -64,7 +64,7 @@ function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
                         className='register__input'
                         minLength='5'
                         maxLength='40'
-                        pattern='[A-Za-zА-Яа-яЁё\s-]+'
+                        pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
                         onChange={controlInput.handleChange}
                         value={email1}
                         required
@@ -82,7 +82,7 @@ function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
                         className='register__input register__input_color_red'
                         minLength='5'
                         maxLength='40'
-                        pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
+                        //pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
                         onChange={controlInput.handleChange}
                         value={password1}
                         required
@@ -90,8 +90,10 @@ function Register({ onRegister, isErrorRegisterBtn, isRegisterMessage }) {
                       <span className={errorClassName}>{password}</span>
                     </label>
                     <span className={errorClassNameBtn}>{isRegisterMessage}</span>
-                    <button type='submit' className='register__submit-button' disabled={!controlInput.isValid}>
-                      Зарегистрироваться
+                    <button type='submit' 
+                      className='register__submit-button' 
+                      disabled={!controlInput.isValid}>
+                        Зарегистрироваться
                     </button>
                   </fieldset>
                 </form>

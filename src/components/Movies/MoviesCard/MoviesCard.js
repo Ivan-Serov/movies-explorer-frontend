@@ -60,7 +60,14 @@ function MoviesCard({
                   ></button>
                 )}
             </div>
-            <img src={thumbnail} alt={name} className='movie-card__image' />
+            <a
+              href={trailerLink}
+              className='movie-card__trailer-link'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <img src={thumbnail} alt={name} className='movie-card__image' />
+            </a>
 
         </li>
     );

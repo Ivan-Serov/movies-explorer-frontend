@@ -40,13 +40,16 @@ function App(){
   useEffect(() => {
     tokenCheck();
   }, []);
-
+  
   useEffect(() => {
     if (loggedIn) {
       mainApi
         .getSavedMovies()
         .then((res) => {
+          setIsLoading(true);
           setSavedMovies(res);
+          console.log(res);
+          setTimeout(() => setIsLoading(false), 1000);
         })
         .catch((err) => {
           console.log(err);
@@ -93,6 +96,7 @@ function App(){
     mainApi
       .addMovie(movie)
       .then((data) => {
+        
         console.log('data '+savedMovies);
         setSavedMovies([data, ...savedMovies]);
       })
@@ -183,9 +187,11 @@ function App(){
     mainApi
       .getSavedMovies()
       .then((movies) => {
+        console.log("movies");
         console.log(movies);
-        console.log(setAllSavedMovies(movies));
+        
         setAllSavedMovies(movies);
+        console.log('ALL'+setAllSavedMovies(movies));
         localStorage.setItem('checkboxSaveMovies', checkedSaveMovies);
         const userSavedMovies = movies.filter((movie) => {
           return movie.owner === currentUser._id;
@@ -200,6 +206,8 @@ function App(){
     const searchArr = searchMovies(allSavedMovies, name);
 
     setSavedMovies(searchArr);
+    console.log("MOVIES");
+    console.log(searchArr);
     setIsNotFound(!searchArr.length || !isFailed);
     setTimeout(() => setIsLoading(false), 1000);
   };
@@ -264,6 +272,7 @@ function App(){
       })
       .finally(() => {
         setTimeout(() => setRegisterMessage1(''), 1000);
+        setTimeout(() => setIsMessageProfile(false), 1000);
       });
   };
 

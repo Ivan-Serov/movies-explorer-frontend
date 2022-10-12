@@ -2,6 +2,7 @@ import FilterCheckbox from '../FilterCheckbox/FilterCheckbox';
 import './SearchForm.css';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+
 function SearchForm({
     onSubmit,
     searchKeyword,
@@ -13,8 +14,9 @@ function SearchForm({
     const [keyword, setKeyword] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
     const location = useLocation();
-  
+    
     useEffect(() => {
+      
       if (searchKeyword && location.pathname === '/movies') {
         setKeyword(searchKeyword);
       }
@@ -28,11 +30,14 @@ function SearchForm({
     const handleSubmit = (evt) => {
       evt.preventDefault();
       onSubmit(keyword);
+      
     };
+    
+
     return (
         <section className='search'>
             <div className='search__container'>
-                <form action='#' className='search__form' noValidate onSubmit={handleSubmit}>
+                <form  id="autoclick" action='#' className='search__form' noValidate onSubmit={handleSubmit}>
                     <div className='search__lupa'></div>
                     <input type='text' className='search__input' placeholder='Фильм'
                     required

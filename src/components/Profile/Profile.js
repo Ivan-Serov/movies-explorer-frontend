@@ -101,7 +101,9 @@ function Profile({ onUpdateUser, onSignOut, isMessageProfile, onRegister, isErro
     }
   console.log(userData);
   console.log(values.name);
-  
+  let classNameMessageBtn = isMessageProfile
+    ? 'profile__button-msg'
+    : 'profile__button-msg profile__button-msg_hidden';
     return (
         <main className = 'profile'>
             < Header>
@@ -153,6 +155,9 @@ function Profile({ onUpdateUser, onSignOut, isMessageProfile, onRegister, isErro
                        ) : ( 
                          <>
                             <span className={errorClassNameBtn1}>{isRegisterMessage1}</span> 
+                            <span className={classNameMessageBtn}>
+                              Изменение данных прошло успешно!
+                            </span>
                             <button
                              type='submit'
                              className='profile__button'

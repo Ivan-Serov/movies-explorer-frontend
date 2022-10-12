@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 
 const BREAKPOINT_1280 = 1280;
 const BREAKPOINT_990 = 990;
+const BREAKPOINT_736= 736;
 const BREAKPOINT_480 = 480;
 
 const VISIBLE_MOVIES_5 = 5;
@@ -35,17 +36,21 @@ function MoviesCardList({
   const handleShowMoreMovies = () => {
     setDisplayedMovies((movies) => movies + moviesToLoad);
   };
-
+  const searchShortMoviesArr = movies.slice(0);
   const searchShortMovies = (movies) => {
-    console.log(movies);
-    const searchShortMoviesArr = movies.slice(0);
+    console.log('HZ');
+    console.log(searchShortMoviesArr);
+     searchShortMoviesArr = movies.slice(0);
     return searchShortMoviesArr.filter((item) => item.duration <= 40);
   };
-
+   
   let saveMoviesFilterArr = !checkedSaveMovies
     ? searchShortMovies(savedMovies)
     : savedMovies;
-
+  console.log("SAVE"+saveMoviesFilterArr);
+  console.log(saveMoviesFilterArr);
+  console.log(savedMovies);
+  
   let moviesFilterArr = !checked ? searchShortMovies(movies) : movies;
 
   useEffect(() => {
@@ -58,19 +63,25 @@ function MoviesCardList({
         setDisplayedMovies(VISIBLE_MOVIES_5);
         setMoviesToLoad(MOVIES_TO_LOAD_2);
       } else if (
-        windowWidth <= BREAKPOINT_990 &&
+        windowWidth <= BREAKPOINT_736 &&
         windowWidth > BREAKPOINT_480
       ) {
         setDisplayedMovies(VISIBLE_MOVIES_8);
         setMoviesToLoad(MOVIES_TO_LOAD_2);
       } else if (
-        windowWidth <= BREAKPOINT_1280 &&
+        windowWidth <= BREAKPOINT_990 &&
+        windowWidth > BREAKPOINT_736
+      ) {
+        setDisplayedMovies(VISIBLE_MOVIES_8);
+        setMoviesToLoad(MOVIES_TO_LOAD_3);
+      } else if (
+        windowWidth < BREAKPOINT_1280 &&
         windowWidth > BREAKPOINT_990
       ) {
         setDisplayedMovies(VISIBLE_MOVIES_12);
         setMoviesToLoad(MOVIES_TO_LOAD_3);
-      } else if (windowWidth > BREAKPOINT_1280) {
-        setDisplayedMovies(VISIBLE_MOVIES_16);
+      } else if (windowWidth >= BREAKPOINT_1280) {
+        setDisplayedMovies(VISIBLE_MOVIES_12);
         setMoviesToLoad(MOVIES_TO_LOAD_4);
       }
     }
