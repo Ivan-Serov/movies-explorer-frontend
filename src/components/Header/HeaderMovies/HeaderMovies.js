@@ -25,7 +25,7 @@ function HeaderMovies() {
                         </Link>
                     </li>
                 </ul>
-                    <Link to='/profile' className='navigate__account'>
+                    <Link to='/profile' className='navigate__account' onClick="refresh()">
                         Аккаунт
                     </Link>
             </nav>
