@@ -15,7 +15,7 @@ function HeaderMovies() {
                 {/* <Link to='/' className='auth-links__logo'></Link> */}
                 <ul className='navigate__list'>
                     <li className='navigate__item'>
-                        <Link to='/movies' className='navigate__movies'>
+                        <Link to='/movies' className='navigate__movies' onClick="refresh()">
                             Фильмы
                         </Link>
                     </li>
@@ -25,7 +25,7 @@ function HeaderMovies() {
                         </Link>
                     </li>
                 </ul>
-                    <Link to='/profile' className='navigate__account'>
+                    <Link to='/profile' className='navigate__account' onClick="refresh()">
                         Аккаунт
                     </Link>
             </nav>

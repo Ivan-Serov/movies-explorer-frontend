@@ -13,6 +13,49 @@
 
 }
 
+.custom-checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+  
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 4px;
+    margin-right: 14px;
+}
+  
+.custom-checkbox + label::before {
+    content: "";
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 20px;
+    width: 35px;
+    height: 23px;
+    //background-image: url(../../../images/smalltumb-on.svg);
+    background-position: right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #3ddc84;
+    background: url(../../../images/smalltumb-on.svg);
+}
+  
+.custom-checkbox:checked + label::before {
+    border-radius: 20px;
+    width: 42px;
+
+    background: #ebebeb;
+    //background-image: url(../../../images/smalltumboff.svg);
+    background-position: left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background: url(../../../images/smalltumboff.svg);
+}
+
 .filterCheckbox__tumbler {
     margin: 0;
     margin-right: 10px;
@@ -87,6 +130,8 @@
         width: 100%;
         justify-content: center;
         margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 4px;
     
     }
     

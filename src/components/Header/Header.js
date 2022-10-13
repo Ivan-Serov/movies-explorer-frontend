@@ -6,7 +6,7 @@ function Header({ children, location }) {
   return (
     <header className = 'header'>
       <div className={`header__container ${location}`}>
-        <Link to='/' className='header__logo'></Link>
+        <Link to='/' className='header__logo' onClick="refresh()"></Link>
         {children}
       </div>
     </header>

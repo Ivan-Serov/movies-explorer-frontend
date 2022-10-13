@@ -11,11 +11,17 @@ import NavTab from './NavTab/NavTab'
 import HeaderMain from '../Header/HeaderMain/HeaderMain';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header'
-function Main(){
+import HeaderMovies from '../Header/HeaderMovies/HeaderMovies';
+function Main({ loggedIn }){
     return (
         <main className="main">
            <Header>
-               < HeaderMain/>
+                {loggedIn ? (
+                    < HeaderMovies/>
+                    
+                ):(
+                    < HeaderMain/>
+                )}
             </Header>
             
             < Promo>
