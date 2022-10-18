@@ -36,11 +36,11 @@ function MoviesCardList({
   const handleShowMoreMovies = () => {
     setDisplayedMovies((movies) => movies + moviesToLoad);
   };
-  const searchShortMoviesArr = movies.slice(0);
+  //const searchShortMoviesArr = movies.slice(0);
   const searchShortMovies = (movies) => {
     console.log('HZ');
     console.log(searchShortMoviesArr);
-     searchShortMoviesArr = movies.slice(0);
+    const searchShortMoviesArr = movies.slice(0);
     return searchShortMoviesArr.filter((item) => item.duration <= 40);
   };
    

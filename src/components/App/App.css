@@ -6,4 +6,7 @@
     color: #FFFFFF;
     user-select: none;
     background: rgba(32, 32, 32, 1);
-  }
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}

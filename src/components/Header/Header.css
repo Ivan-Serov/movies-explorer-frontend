@@ -3,6 +3,8 @@
     //justify-content: space-between;
     width: 89%;
     padding-top: 18px;
+    flex: 0 0 auto;
+    align-self: center;
 }
 .header__container{
     width: 100%;

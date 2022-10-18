@@ -22,34 +22,37 @@ function SavedMovies({
     allSavedMovies,
 }) {
     return (
-        <main className = 'movies'>
+        <>{/* <main className = 'movies'> */}
             < Header>
                 <HeaderMovies/>
             </Header>
-            <SearchForm 
-                onSubmit={onSubmit}
-                searchKeyword={searchKeyword}
-                onCheckbox={onCheckbox}
-                checked={checked}
-                checkedSaveMovies={checkedSaveMovies}
-            />
-            {isLoading ? (
-                <Preloader />
-                ) : (
-                  <MoviesCardList
+            <main className = 'movies'>
+                <SearchForm 
+                    onSubmit={onSubmit}
+                    searchKeyword={searchKeyword}
+                    onCheckbox={onCheckbox}
                     checked={checked}
                     checkedSaveMovies={checkedSaveMovies}
-                    movies={movies}
-                    isNotFound={isNotFound}
-                    isFailed={isFailed}
-                    savedMovies={savedMovies}
-                    onSave={onSave}
-                    onDelete={onDelete}
-                    allSavedMovies={allSavedMovies}
-                  ></MoviesCardList>
-                )}
+                />
+                {isLoading ? (
+                    <Preloader />
+                    ) : (
+                      <MoviesCardList
+                        checked={checked}
+                        checkedSaveMovies={checkedSaveMovies}
+                        movies={movies}
+                        isNotFound={isNotFound}
+                        isFailed={isFailed}
+                        savedMovies={savedMovies}
+                        onSave={onSave}
+                        onDelete={onDelete}
+                        allSavedMovies={allSavedMovies}
+                      ></MoviesCardList>
+                    )}
+            </main>   
             <Footer />
-        </main>
+        </>
+        /* </main> */
     );
 }
 export default SavedMovies;

@@ -22,36 +22,38 @@ function Movies({
     allSavedMovies,
   }) {
     return (
-        <main className = 'movies'>
+        <>
             < Header>
                 <HeaderMovies/>
             </Header>
-            <SearchForm 
-                onSubmit={onSubmit}
-                searchKeyword={searchKeyword}
-                onCheckbox={onCheckbox}
-                checked={checked}
-                checkedSaveMovies={checkedSaveMovies}
-            />
-            {isLoading ? (
-                <Preloader />
-            ) : (
-                <MoviesCardList
-                    movies={movies}
-                    isNotFound={isNotFound}
-                    isFailed={isFailed}
+            <main className = 'movies'>
+                <SearchForm 
+                    onSubmit={onSubmit}
                     searchKeyword={searchKeyword}
-                    savedMovies={savedMovies}
-                    onSave={onSave}
-                    onDelete={onDelete}
                     onCheckbox={onCheckbox}
                     checked={checked}
                     checkedSaveMovies={checkedSaveMovies}
-                    allSavedMovies={allSavedMovies}
                 />
-            )}
+                {isLoading ? (
+                    <Preloader />
+                ) : (
+                    <MoviesCardList
+                        movies={movies}
+                        isNotFound={isNotFound}
+                        isFailed={isFailed}
+                        searchKeyword={searchKeyword}
+                        savedMovies={savedMovies}
+                        onSave={onSave}
+                        onDelete={onDelete}
+                        onCheckbox={onCheckbox}
+                        checked={checked}
+                        checkedSaveMovies={checkedSaveMovies}
+                        allSavedMovies={allSavedMovies}
+                    />
+                )}
+            </main>
             <Footer />
-        </main>
+        </>
     );
 }
 export default Movies;
