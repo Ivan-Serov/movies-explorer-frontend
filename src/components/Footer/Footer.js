@@ -1,6 +1,7 @@
 import './Footer.css';
 import React, { useEffect, useState } from 'react';
 function Footer() {
+  
   return (
     <footer className='footer'>
       <div className='footer__container'>

@@ -2,8 +2,11 @@ import './AboutMe.css';
 import React, { useEffect, useState } from 'react';
 //import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 //import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
-import foto from '../../../images/pic__COLOR_pic.svg';
+import foto from '../../../images/ZZ.jpg';
 function AboutMe(){
+    let t = new Date().getFullYear()- 1995;
+    console.log(t);
+    console.log((new Date().toDateString()- 1995));
     return (
         <section className="about" id='student'>
             <h2 className="about__header">Студент</h2>
@@ -12,12 +15,12 @@ function AboutMe(){
                     <h3 className="about__info-title">Иван</h3>
                     <p className="about__info-subtitle">Тестировщик, 27</p>
                     <p className="about__info-description">
-                    Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена 
-и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы. 
+                    Я живу в Москве. Зкаончил РТУ МИРЭА (бакалавриат: Мехотроника и робототехника; магистратура: Управление в технических системах)
+
                     </p>
                     <ul className="about__links">
                         <li>
-                              <a href="https://vk.com/" className="about__link" target="_blank" rel="noreferrer">
+                              <a href="https://vk.com/van9iserov" className="about__link" target="_blank" rel="noreferrer">
                                     ВКонтакте
                               </a>
                         </li>

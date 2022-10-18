@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './HeaderMovies.css';
 import React, { useEffect, useState } from 'react';
 import Burger from '../Burger/Burger';
@@ -15,17 +15,17 @@ function HeaderMovies() {
                 {/* <Link to='/' className='auth-links__logo'></Link> */}
                 <ul className='navigate__list'>
                     <li className='navigate__item'>
-                        <Link to='/movies' className='navigate__movies' onClick="refresh()">
+                        <NavLink to='/movies' className='navigate__movies' /* onClick="refresh()" */>
                             Фильмы
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className='navigate__item'>
-                        <Link to='/saved-movies' className='navigate__movies'>
+                        <NavLink to='/saved-movies' className='navigate__movies'>
                         Сохранённые фильмы
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
-                    <Link to='/profile' className='navigate__account' onClick="refresh()">
+                    <Link to='/profile' className='navigate__account' /* onClick="refresh()" */>
                         Аккаунт
                     </Link>
             </nav>

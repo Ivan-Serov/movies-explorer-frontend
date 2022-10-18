@@ -22,6 +22,8 @@
     line-height: 18px;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+    position: relative;
 }
   
 .navigate__save-movies {
@@ -42,6 +44,28 @@
     text-decoration: none;
     color: #fff;
     background: #313131;
+    transition: opacity 0.3s linear;
+}
+.navigate__movies::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #fff;
+	transition: width 0.3s ease-out;
+}
+
+.navigate__movies:hover::after,
+.navigate__movies:focus::after {
+	width: 100%; /* устанавливаем значение 100% чтобы ссылка подчёркивалась полностью */
+}
+.active {
+    color: #3ddc84;
+  }
+.navigate__account:hover {
+  opacity: 0.8;
 }
   
 .navigate__button-open {
